@@ -14,15 +14,30 @@
 
     <div class="main-container">
         <div class="header">
-            <h1>🔢 Calculator Collection</h1>
+            <h1>Calculator Collection</h1>
             <div class="header-buttons">
                 <select id="numberFormat" class="number-format-select" onchange="changeNumberFormat(this.value)">
                     <option value="plain">Plain</option>
                     <option value="million">Millions (1,000,000)</option>
                     <option value="indian">Indian (10,00,000)</option>
                 </select>
+                <button class="view-all-btn" onclick="openCalculatorList()">📋 View All</button>
                 <button class="add-calculator-btn" onclick="addCalculator()" id="addCalcBtn">+ Add</button>
                 <button class="reset-all-btn" onclick="resetAllCalculators()">Reset All</button>
+            </div>
+        </div>
+
+        <!-- Modal for viewing all calculators -->
+        <div id="calculatorListModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>All Calculators</h2>
+                    <button class="modal-close" onclick="closeCalculatorList()">×</button>
+                </div>
+                <input type="text" id="modalSearch" class="modal-search" placeholder="Search calculators..." oninput="filterModalCalculators()">
+                <div class="modal-body" id="calculatorListBody">
+                    <!-- Calculator list will be populated here -->
+                </div>
             </div>
         </div>
 
