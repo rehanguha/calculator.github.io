@@ -1,4 +1,4 @@
-<script>
+
     // Logic to swap visibility using the 'hidden' attribute
     function switchCalc() {
         const selected = document.getElementById('mainSwitcher').value;
@@ -38,4 +38,3 @@
         const diff = a - b;
         document.getElementById('rProf').innerText = diff >= 0 ? "Profit: " + diff : "Loss: " + Math.abs(diff);
     }
-</script>
