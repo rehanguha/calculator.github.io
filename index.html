@@ -1,2 +1,49 @@
-<h1>Test Website</h1>
-<marquee>NRG!!!</marquee>
+<html>
+
+  <div align="center">
+    <h3>Multi-Calculator</h3>
+    
+    <!-- Main Switcher -->
+    <select id="mainSwitcher" onchange="switchCalc()">
+        <option value="sumDiv">Sum Calculator</option>
+        <option value="divDiv">Division Calculator</option>
+        <option value="percDiv">Percentage Calculator</option>
+        <option value="profDiv">Profit Calculator</option>
+    </select>
+
+    <hr width="300">
+
+    <!-- SUM CALCULATOR -->
+    <div id="sumDiv">
+        <h4>Sum</h4>
+        <input type="number" id="s1" placeholder="Number 1" oninput="calcSum()"> +
+        <input type="number" id="s2" placeholder="Number 2" oninput="calcSum()">
+        <p>Result: <b id="rSum">0</b></p>
+    </div>
+
+    <!-- DIVISION CALCULATOR -->
+    <div id="divDiv" hidden>
+        <h4>Division</h4>
+        <input type="number" id="d1" placeholder="Total" oninput="calcDiv()"> /
+        <input type="number" id="d2" placeholder="Divide by" oninput="calcDiv()">
+        <p>Result: <b id="rDiv">0</b></p>
+    </div>
+
+    <!-- PERCENTAGE CALCULATOR -->
+    <div id="percDiv" hidden>
+        <h4>Percentage</h4>
+        <input type="number" id="p1" placeholder="Percent %" oninput="calcPerc()"> % of
+        <input type="number" id="p2" placeholder="Value" oninput="calcPerc()">
+        <p>Result: <b id="rPerc">0</b></p>
+    </div>
+
+    <!-- PROFIT CALCULATOR -->
+    <div id="profDiv" hidden>
+        <h4>Profit/Loss</h4>
+        <input type="number" id="pr1" placeholder="Revenue" oninput="calcProf()"> -
+        <input type="number" id="pr2" placeholder="Cost" oninput="calcProf()">
+        <p>Result: <b id="rProf">0</b></p>
+    </div>
+</div>
+  
+</html>
