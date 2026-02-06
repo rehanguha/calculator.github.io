@@ -144,7 +144,37 @@ const calculatorData = {
     lifeInsurance: { name: 'Life Insurance Needs', category: 'Insurance', terms: ['insurance', 'life', 'coverage', 'needs', 'protection'] },
     termInsurance: { name: 'Term Insurance Premium', category: 'Insurance', terms: ['term', 'insurance', 'premium', 'cost', 'policy'] },
     educationFund: { name: 'Education Fund Calculator', category: 'Education Planning', terms: ['education', 'fund', 'savings', 'school', 'college'] },
-    collegeCost: { name: 'College Cost Projection', category: 'Education Planning', terms: ['college', 'cost', 'education', 'future', 'inflation'] }
+    collegeCost: { name: 'College Cost Projection', category: 'Education Planning', terms: ['college', 'cost', 'education', 'future', 'inflation'] },
+    salaryCalculator: { name: 'Salary Calculator', category: 'Income & Earning', terms: ['salary', 'gross', 'net', 'deduction', 'tax'] },
+    sideHustleIncome: { name: 'Side Hustle Income', category: 'Income & Earning', terms: ['side', 'hustle', 'income', 'passive', 'extra'] },
+    freelanceRate: { name: 'Freelance Rate Calculator', category: 'Income & Earning', terms: ['freelance', 'rate', 'hourly', 'per hour', 'earning'] },
+    savingsRate: { name: 'Savings Rate Calculator', category: 'Tracking & Monitoring', terms: ['savings', 'rate', 'percentage', 'how much', 'percent'] },
+    goalTracker: { name: 'Goal Tracker', category: 'Tracking & Monitoring', terms: ['goal', 'tracker', 'progress', 'target', 'tracking'] },
+    expenseTracker: { name: 'Expense Tracker', category: 'Tracking & Monitoring', terms: ['expense', 'tracker', 'spending', 'monitor', 'track'] },
+    loanComparison: { name: 'Loan Comparison', category: 'Loan Comparisons', terms: ['loan', 'comparison', 'compare', 'best', 'options'] },
+    paybackPeriod: { name: 'Payback Period Calculator', category: 'Loan Comparisons', terms: ['payback', 'period', 'when', 'paid', 'investment'] },
+    earlyPayoff: { name: 'Early Loan Payoff', category: 'Loan Comparisons', terms: ['early', 'payoff', 'extra', 'payment', 'loan'] },
+    peRatio: { name: 'P/E Ratio & EPS', category: 'Investment Analysis (Advanced)', terms: ['p/e', 'pe', 'earnings', 'price', 'ratio', 'eps'] },
+    dividendGrowth: { name: 'Dividend Growth Calculator', category: 'Investment Analysis (Advanced)', terms: ['dividend', 'growth', 'income', 'future', 'projection'] },
+    portfolioRebalancing: { name: 'Portfolio Rebalancing', category: 'Investment Analysis (Advanced)', terms: ['portfolio', 'rebalance', 'allocation', 'asset', 'weightage'] },
+    taxLossHarvesting: { name: 'Tax Loss Harvesting', category: 'Tax Planning', terms: ['tax', 'loss', 'harvesting', 'offset', 'capital'] },
+    taxBracket: { name: 'Tax Bracket Calculator', category: 'Tax Planning', terms: ['tax', 'bracket', 'rate', 'slab', 'income'] },
+    giftTax: { name: 'Gift/Inheritance Tax', category: 'Tax Planning', terms: ['gift', 'inheritance', 'tax', 'estate', 'legacy'] },
+    businessProfit: { name: 'Business Profit Calculator', category: 'Business & Freelance', terms: ['business', 'profit', 'revenue', 'cost', 'earnings'] },
+    markupMargin: { name: 'Markup vs Margin', category: 'Business & Freelance', terms: ['markup', 'margin', 'price', 'cost', 'profit'] },
+    expenseInflation: { name: 'Expense Inflation Calculator', category: 'Lifestyle & Planning', terms: ['expense', 'inflation', 'future', 'cost', 'price'] },
+    weddingBudget: { name: 'Wedding Budget Planner', category: 'Lifestyle & Planning', terms: ['wedding', 'budget', 'planner', 'cost', 'event'] },
+    vacationBudget: { name: 'Vacation Budget Planner', category: 'Lifestyle & Planning', terms: ['vacation', 'budget', 'trip', 'travel', 'cost'] },
+    pensionCalculator: { name: 'Pension Calculator', category: 'Retirement (Additional)', terms: ['pension', 'defined benefit', 'retirement', 'income', 'benefit'] },
+    socialSecurity: { name: 'Social Security Estimator', category: 'Retirement (Additional)', terms: ['social security', 'benefits', 'retirement', 'income', 'government'] },
+    cryptoROI: { name: 'Crypto Investment ROI', category: 'Crypto & Modern Investing', terms: ['crypto', 'cryptocurrency', 'roi', 'return', 'bitcoin'] },
+    cryptoDCA: { name: 'Crypto DCA Calculator', category: 'Crypto & Modern Investing', terms: ['crypto', 'dca', 'dollar cost', 'averaging', 'bitcoin'] },
+    bondYield: { name: 'Bond Yield Calculator', category: 'Advanced Financial', terms: ['bond', 'yield', 'interest', 'return', 'fixed income'] },
+    npv: { name: 'Net Present Value (NPV)', category: 'Advanced Financial', terms: ['npv', 'net', 'present', 'value', 'project'] },
+    irr: { name: 'Internal Rate of Return (IRR)', category: 'Advanced Financial', terms: ['irr', 'internal', 'rate', 'return', 'efficiency'] },
+    leaseVsBuy: { name: 'Lease vs Buy Calculator', category: 'Comparison Tools', terms: ['lease', 'buy', 'comparison', 'car', 'equipment'] },
+    costOfLiving: { name: 'Cost of Living Adjuster', category: 'Comparison Tools', terms: ['cost', 'living', 'location', 'salary', 'adjust'] },
+    rentalYield: { name: 'Rental Yield Calculator', category: 'Real Estate', terms: ['rental', 'yield', 'rent', 'return', 'property'] }
 };
 
 // Filter calculators based on search input
@@ -483,6 +513,56 @@ function addCalculator() {
                 <optgroup label="Education Planning">
                     <option value="educationFund">Education Fund Calculator</option>
                     <option value="collegeCost">College Cost Projection</option>
+                </optgroup>
+                <optgroup label="Income & Earning">
+                    <option value="salaryCalculator">Salary Calculator</option>
+                    <option value="sideHustleIncome">Side Hustle Income</option>
+                    <option value="freelanceRate">Freelance Rate Calculator</option>
+                </optgroup>
+                <optgroup label="Tracking & Monitoring">
+                    <option value="savingsRate">Savings Rate Calculator</option>
+                    <option value="goalTracker">Goal Tracker</option>
+                    <option value="expenseTracker">Expense Tracker</option>
+                </optgroup>
+                <optgroup label="Loan Comparisons">
+                    <option value="loanComparison">Loan Comparison</option>
+                    <option value="paybackPeriod">Payback Period Calculator</option>
+                    <option value="earlyPayoff">Early Loan Payoff</option>
+                </optgroup>
+                <optgroup label="Investment Analysis (Advanced)">
+                    <option value="peRatio">P/E Ratio & EPS</option>
+                    <option value="dividendGrowth">Dividend Growth Calculator</option>
+                    <option value="portfolioRebalancing">Portfolio Rebalancing</option>
+                </optgroup>
+                <optgroup label="Tax Planning">
+                    <option value="taxLossHarvesting">Tax Loss Harvesting</option>
+                    <option value="taxBracket">Tax Bracket Calculator</option>
+                    <option value="giftTax">Gift/Inheritance Tax</option>
+                </optgroup>
+                <optgroup label="Business & Freelance">
+                    <option value="businessProfit">Business Profit Calculator</option>
+                    <option value="markupMargin">Markup vs Margin</option>
+                </optgroup>
+                <optgroup label="Lifestyle & Planning">
+                    <option value="expenseInflation">Expense Inflation Calculator</option>
+                    <option value="weddingBudget">Wedding Budget Planner</option>
+                    <option value="vacationBudget">Vacation Budget Planner</option>
+                </optgroup>
+                <optgroup label="Crypto & Modern Investing">
+                    <option value="cryptoROI">Crypto Investment ROI</option>
+                    <option value="cryptoDCA">Crypto DCA Calculator</option>
+                </optgroup>
+                <optgroup label="Advanced Financial">
+                    <option value="bondYield">Bond Yield Calculator</option>
+                    <option value="npv">Net Present Value (NPV)</option>
+                    <option value="irr">Internal Rate of Return (IRR)</option>
+                </optgroup>
+                <optgroup label="Comparison Tools">
+                    <option value="leaseVsBuy">Lease vs Buy Calculator</option>
+                    <option value="costOfLiving">Cost of Living Adjuster</option>
+                </optgroup>
+                <optgroup label="Real Estate">
+                    <option value="rentalYield">Rental Yield Calculator</option>
                 </optgroup>
             </select>
 
@@ -1711,6 +1791,830 @@ function addCalculator() {
                 </div>
             </div>
 
+            <!-- Salary Calculator -->
+            <div id="salaryCalculator-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Salary Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'salaryCalculator-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="salaryCalculator-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate net salary after tax and deductions.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Net Salary = Gross Salary - Tax - Deductions</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Gross: ₹50,000, Tax Rate: 20%, Deductions: ₹5,000</p>
+                    <p><strong>Result:</strong> Net: ₹35,000</p>
+                </div>
+                <div class="input-group">
+                    <label for="scGross-${id}">Gross Salary (₹)</label>
+                    <input type="number" id="scGross-${id}" placeholder="Gross Salary" step="0.01" oninput="calcSalary(${id})" onkeypress="handleEnter(event)">
+                    <label for="scTaxRate-${id}">Tax Rate (%)</label>
+                    <input type="number" id="scTaxRate-${id}" placeholder="Tax Rate" value="20" step="0.01" oninput="calcSalary(${id})" onkeypress="handleEnter(event)">
+                    <label for="scDeductions-${id}">Deductions (₹)</label>
+                    <input type="number" id="scDeductions-${id}" placeholder="Deductions" step="0.01" oninput="calcSalary(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Net Salary: <span id="rNetSalary-${id}">0</span></div>
+                    <div class="result">Tax Amount: <span id="rTaxAmount-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Side Hustle Income Calculator -->
+            <div id="sideHustleIncome-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Side Hustle Income Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'sideHustleIncome-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="sideHustleIncome-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate total income from side hustle after expenses.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Net Income = (Hourly Rate × Hours) - Expenses</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Rate: ₹500/hr, Hours: 20, Expenses: ₹2,000</p>
+                    <p><strong>Result:</strong> Net Income: ₹8,000</p>
+                </div>
+                <div class="input-group">
+                    <label for="shiRate-${id}">Hourly Rate (₹)</label>
+                    <input type="number" id="shiRate-${id}" placeholder="Rate per hour" step="0.01" oninput="calcSideHustle(${id})" onkeypress="handleEnter(event)">
+                    <label for="shiHours-${id}">Hours per Month</label>
+                    <input type="number" id="shiHours-${id}" placeholder="Hours" step="0.5" oninput="calcSideHustle(${id})" onkeypress="handleEnter(event)">
+                    <label for="shiExpenses-${id}">Monthly Expenses (₹)</label>
+                    <input type="number" id="shiExpenses-${id}" placeholder="Expenses" step="0.01" oninput="calcSideHustle(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Gross Income: <span id="rGrossIncome-${id}">0</span></div>
+                    <div class="result">Net Income: <span id="rNetIncome-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Freelance Rate Calculator -->
+            <div id="freelanceRate-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Freelance Rate Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'freelanceRate-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="freelanceRate-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate recommended freelance hourly rate.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Hourly Rate = (Annual Salary ÷ 2000) × (1 + Markup)</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Salary: ₹10,00,000, Markup: 30%</p>
+                    <p><strong>Result:</strong> Rate: ₹650/hr</p>
+                </div>
+                <div class="input-group">
+                    <label for="frSalary-${id}">Desired Annual Salary (₹)</label>
+                    <input type="number" id="frSalary-${id}" placeholder="Annual Salary" step="0.01" oninput="calcFreelanceRate(${id})" onkeypress="handleEnter(event)">
+                    <label for="frMarkup-${id}">Markup for Expenses (%)</label>
+                    <input type="number" id="frMarkup-${id}" placeholder="Markup %" value="30" step="0.01" oninput="calcFreelanceRate(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Recommended Hourly Rate: <span id="rHourlyRate-${id}">0</span></div>
+                    <div class="result">Annual Target Hours: 2000</div>
+                </div>
+            </div>
+
+            <!-- Savings Rate Calculator -->
+            <div id="savingsRate-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Savings Rate Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'savingsRate-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="savingsRate-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate your savings rate percentage.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Savings Rate = (Monthly Savings ÷ Monthly Income) × 100</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Income: ₹50,000, Savings: ₹15,000</p>
+                    <p><strong>Result:</strong> Savings Rate: 30%</p>
+                </div>
+                <div class="input-group">
+                    <label for="srIncome-${id}">Monthly Income (₹)</label>
+                    <input type="number" id="srIncome-${id}" placeholder="Monthly Income" step="0.01" oninput="calcSavingsRate(${id})" onkeypress="handleEnter(event)">
+                    <label for="srSavings-${id}">Monthly Savings (₹)</label>
+                    <input type="number" id="srSavings-${id}" placeholder="Monthly Savings" step="0.01" oninput="calcSavingsRate(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Savings Rate: <span id="rSavingsRate-${id}">0%</span></div>
+                    <div class="result">Monthly Spending: <span id="rMonthlySpending-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Goal Tracker Calculator -->
+            <div id="goalTracker-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Financial Goal Tracker</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'goalTracker-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="goalTracker-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Track progress towards financial goals.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Progress % = (Current Amount ÷ Target Amount) × 100</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Target: ₹10,00,000, Current: ₹3,00,000</p>
+                    <p><strong>Result:</strong> Progress: 30%</p>
+                </div>
+                <div class="input-group">
+                    <label for="gtTarget-${id}">Target Amount (₹)</label>
+                    <input type="number" id="gtTarget-${id}" placeholder="Target Amount" step="0.01" oninput="calcGoalTracker(${id})" onkeypress="handleEnter(event)">
+                    <label for="gtCurrent-${id}">Current Amount (₹)</label>
+                    <input type="number" id="gtCurrent-${id}" placeholder="Current Amount" step="0.01" oninput="calcGoalTracker(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Progress: <span id="rProgress-${id}">0%</span></div>
+                    <div class="result">Remaining: <span id="rRemaining-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Expense Tracker Calculator -->
+            <div id="expenseTracker-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Expense Tracker</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'expenseTracker-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="expenseTracker-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate total expenses and percentage of income.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Total = Sum of All Expenses, Percentage = (Total ÷ Income) × 100</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Food: ₹10k, Transport: ₹3k, Entertainment: ₹2k, Other: ₹5k, Income: ₹50k</p>
+                    <p><strong>Result:</strong> Total: ₹20k, Percentage: 40%</p>
+                </div>
+                <div class="input-group">
+                    <label for="etFood-${id}">Food & Groceries (₹)</label>
+                    <input type="number" id="etFood-${id}" placeholder="Food expenses" step="0.01" oninput="calcExpenseTracker(${id})" onkeypress="handleEnter(event)">
+                    <label for="etTransport-${id}">Transport (₹)</label>
+                    <input type="number" id="etTransport-${id}" placeholder="Transport" step="0.01" oninput="calcExpenseTracker(${id})" onkeypress="handleEnter(event)">
+                    <label for="etEntertainment-${id}">Entertainment (₹)</label>
+                    <input type="number" id="etEntertainment-${id}" placeholder="Entertainment" step="0.01" oninput="calcExpenseTracker(${id})" onkeypress="handleEnter(event)">
+                    <label for="etOther-${id}">Other Expenses (₹)</label>
+                    <input type="number" id="etOther-${id}" placeholder="Other" step="0.01" oninput="calcExpenseTracker(${id})" onkeypress="handleEnter(event)">
+                    <label for="etIncome-${id}">Monthly Income (₹)</label>
+                    <input type="number" id="etIncome-${id}" placeholder="Income" step="0.01" oninput="calcExpenseTracker(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Expenses: <span id="rTotalExpenses-${id}">0</span></div>
+                    <div class="result">Expense Ratio: <span id="rExpenseRatio-${id}">0%</span></div>
+                </div>
+            </div>
+
+            <!-- Loan Comparison Calculator -->
+            <div id="loanComparison-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Loan Comparison</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'loanComparison-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="loanComparison-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Compare two loan options side by side.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Total Interest = (EMI × Months) - Principal</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Loan 1: ₹10L @ 8% for 5yr, Loan 2: ₹10L @ 9% for 5yr</p>
+                    <p><strong>Result:</strong> Interest comparison</p>
+                </div>
+                <div class="input-group">
+                    <label for="lcLoan1Principal-${id}">Loan 1: Principal (₹)</label>
+                    <input type="number" id="lcLoan1Principal-${id}" placeholder="Principal" step="0.01" oninput="calcLoanComparison(${id})" onkeypress="handleEnter(event)">
+                    <label for="lcLoan1Rate-${id}">Loan 1: Interest Rate (%)</label>
+                    <input type="number" id="lcLoan1Rate-${id}" placeholder="Rate %" value="8" step="0.01" oninput="calcLoanComparison(${id})" onkeypress="handleEnter(event)">
+                    <label for="lcLoan1Tenure-${id}">Loan 1: Tenure (Years)</label>
+                    <input type="number" id="lcLoan1Tenure-${id}" placeholder="Tenure" value="5" step="0.5" oninput="calcLoanComparison(${id})" onkeypress="handleEnter(event)">
+                    <label for="lcLoan2Principal-${id}">Loan 2: Principal (₹)</label>
+                    <input type="number" id="lcLoan2Principal-${id}" placeholder="Principal" step="0.01" oninput="calcLoanComparison(${id})" onkeypress="handleEnter(event)">
+                    <label for="lcLoan2Rate-${id}">Loan 2: Interest Rate (%)</label>
+                    <input type="number" id="lcLoan2Rate-${id}" placeholder="Rate %" value="9" step="0.01" oninput="calcLoanComparison(${id})" onkeypress="handleEnter(event)">
+                    <label for="lcLoan2Tenure-${id}">Loan 2: Tenure (Years)</label>
+                    <input type="number" id="lcLoan2Tenure-${id}" placeholder="Tenure" value="5" step="0.5" oninput="calcLoanComparison(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Loan 1 EMI: <span id="rLoan1EMI-${id}">0</span></div>
+                    <div class="result">Loan 1 Total Interest: <span id="rLoan1Interest-${id}">0</span></div>
+                    <div class="result">Loan 2 EMI: <span id="rLoan2EMI-${id}">0</span></div>
+                    <div class="result">Loan 2 Total Interest: <span id="rLoan2Interest-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Payback Period Calculator -->
+            <div id="paybackPeriod-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Payback Period</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'paybackPeriod-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="paybackPeriod-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate payback period for an investment.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Payback Period = Initial Investment ÷ Annual Cash Flow</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Investment: ₹10,00,000, Annual Cash Flow: ₹2,00,000</p>
+                    <p><strong>Result:</strong> Payback Period: 5 years</p>
+                </div>
+                <div class="input-group">
+                    <label for="ppInvestment-${id}">Initial Investment (₹)</label>
+                    <input type="number" id="ppInvestment-${id}" placeholder="Investment" step="0.01" oninput="calcPaybackPeriod(${id})" onkeypress="handleEnter(event)">
+                    <label for="ppAnnualCash-${id}">Annual Cash Flow (₹)</label>
+                    <input type="number" id="ppAnnualCash-${id}" placeholder="Annual Cash Flow" step="0.01" oninput="calcPaybackPeriod(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Payback Period: <span id="rPaybackYears-${id}">0</span> years</div>
+                </div>
+            </div>
+
+            <!-- Early Loan Payoff Calculator -->
+            <div id="earlyPayoff-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Early Loan Payoff</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'earlyPayoff-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="earlyPayoff-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate savings from paying off loan early.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Interest Saved = Total Interest - Remaining Interest</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Principal: ₹10L, Rate: 8%, Tenure: 5yr, Extra Payment: ₹10k/month</p>
+                    <p><strong>Result:</strong> Payoff in 3 years, Save ₹2,00,000</p>
+                </div>
+                <div class="input-group">
+                    <label for="epPrincipal-${id}">Principal (₹)</label>
+                    <input type="number" id="epPrincipal-${id}" placeholder="Principal" step="0.01" oninput="calcEarlyPayoff(${id})" onkeypress="handleEnter(event)">
+                    <label for="epRate-${id}">Interest Rate (%)</label>
+                    <input type="number" id="epRate-${id}" placeholder="Rate %" value="8" step="0.01" oninput="calcEarlyPayoff(${id})" onkeypress="handleEnter(event)">
+                    <label for="epTenure-${id}">Tenure (Years)</label>
+                    <input type="number" id="epTenure-${id}" placeholder="Tenure" value="5" step="0.5" oninput="calcEarlyPayoff(${id})" onkeypress="handleEnter(event)">
+                    <label for="epExtraPayment-${id}">Extra Monthly Payment (₹)</label>
+                    <input type="number" id="epExtraPayment-${id}" placeholder="Extra Payment" step="0.01" oninput="calcEarlyPayoff(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Regular EMI: <span id="rRegularEMI-${id}">0</span></div>
+                    <div class="result">New Payoff Period: <span id="rNewPayoff-${id}">0</span> years</div>
+                    <div class="result">Interest Saved: <span id="rSavedInterest-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- P/E Ratio Calculator -->
+            <div id="peRatio-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>P/E Ratio Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'peRatio-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="peRatio-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate Price to Earnings ratio for stock valuation.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">P/E Ratio = Stock Price ÷ Earnings Per Share</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Price: ₹1,000, EPS: ₹100</p>
+                    <p><strong>Result:</strong> P/E Ratio: 10</p>
+                </div>
+                <div class="input-group">
+                    <label for="perPrice-${id}">Stock Price (₹)</label>
+                    <input type="number" id="perPrice-${id}" placeholder="Stock Price" step="0.01" oninput="calcPERatio(${id})" onkeypress="handleEnter(event)">
+                    <label for="perEPS-${id}">Earnings Per Share (₹)</label>
+                    <input type="number" id="perEPS-${id}" placeholder="EPS" step="0.01" oninput="calcPERatio(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">P/E Ratio: <span id="rPERatio-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Dividend Growth Calculator -->
+            <div id="dividendGrowth-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Dividend Growth Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'dividendGrowth-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="dividendGrowth-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Project future dividend income with growth rate.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Future Dividend = Current × (1 + Growth Rate)^Years</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Current: ₹5, Growth: 8%, Years: 10</p>
+                    <p><strong>Result:</strong> Future: ₹10.79</p>
+                </div>
+                <div class="input-group">
+                    <label for="dgCurrent-${id}">Current Dividend Per Share (₹)</label>
+                    <input type="number" id="dgCurrent-${id}" placeholder="Current Dividend" step="0.01" oninput="calcDividendGrowth(${id})" onkeypress="handleEnter(event)">
+                    <label for="dgGrowthRate-${id}">Annual Growth Rate (%)</label>
+                    <input type="number" id="dgGrowthRate-${id}" placeholder="Growth Rate %" value="8" step="0.01" oninput="calcDividendGrowth(${id})" onkeypress="handleEnter(event)">
+                    <label for="dgYears-${id}">Years</label>
+                    <input type="number" id="dgYears-${id}" placeholder="Years" value="10" step="0.5" oninput="calcDividendGrowth(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Future Dividend: <span id="rFutureDividend-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Portfolio Rebalancing Calculator -->
+            <div id="portfolioRebalancing-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Portfolio Rebalancing</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'portfolioRebalancing-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="portfolioRebalancing-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate allocation needed to rebalance portfolio.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Target Value = Total Portfolio × Target % - Current Value</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Stocks: ₹60k (40%), Bonds: ₹40k (60%), Total: ₹100k, New: 50/50</p>
+                    <p><strong>Result:</strong> Buy ₹10k stocks</p>
+                </div>
+                <div class="input-group">
+                    <label for="prStockValue-${id}">Current Stock Value (₹)</label>
+                    <input type="number" id="prStockValue-${id}" placeholder="Stock Value" step="0.01" oninput="calcPortfolioRebalancing(${id})" onkeypress="handleEnter(event)">
+                    <label for="prBondValue-${id}">Current Bond Value (₹)</label>
+                    <input type="number" id="prBondValue-${id}" placeholder="Bond Value" step="0.01" oninput="calcPortfolioRebalancing(${id})" onkeypress="handleEnter(event)">
+                    <label for="prTargetStock-${id}">Target Stock %</label>
+                    <input type="number" id="prTargetStock-${id}" placeholder="Target %" value="50" step="0.01" oninput="calcPortfolioRebalancing(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Portfolio: <span id="rTotalPortfolio-${id}">0</span></div>
+                    <div class="result">Stocks Adjustment: <span id="rStocksAdjustment-${id}">0</span></div>
+                    <div class="result">Bonds Adjustment: <span id="rBondsAdjustment-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Tax Loss Harvesting Calculator -->
+            <div id="taxLossHarvesting-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Tax Loss Harvesting</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'taxLossHarvesting-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="taxLossHarvesting-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate tax savings from realized losses.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Tax Saved = Loss Amount × Tax Rate</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Loss: ₹50,000, Tax Rate: 30%</p>
+                    <p><strong>Result:</strong> Tax Saved: ₹15,000</p>
+                </div>
+                <div class="input-group">
+                    <label for="tlhLoss-${id}">Realized Loss (₹)</label>
+                    <input type="number" id="tlhLoss-${id}" placeholder="Loss Amount" step="0.01" oninput="calcTaxLossHarvesting(${id})" onkeypress="handleEnter(event)">
+                    <label for="tlhTaxRate-${id}">Tax Rate (%)</label>
+                    <input type="number" id="tlhTaxRate-${id}" placeholder="Tax Rate %" value="30" step="0.01" oninput="calcTaxLossHarvesting(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Tax Saved: <span id="rTaxSaved-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Tax Bracket Calculator -->
+            <div id="taxBracket-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Tax Bracket Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'taxBracket-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="taxBracket-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate tax amount based on income brackets.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Tax = Sum of (Income in bracket × Rate for bracket)</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Income: ₹15,00,000</p>
+                    <p><strong>Result:</strong> Tax: ₹4,20,000 (Effective Rate: 28%)</p>
+                </div>
+                <div class="input-group">
+                    <label for="tbIncome-${id}">Annual Income (₹)</label>
+                    <input type="number" id="tbIncome-${id}" placeholder="Annual Income" step="0.01" oninput="calcTaxBracket(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Tax: <span id="rTotalTax-${id}">0</span></div>
+                    <div class="result">Effective Tax Rate: <span id="rEffectiveRate-${id}">0%</span></div>
+                </div>
+            </div>
+
+            <!-- Gift/Inheritance Tax Calculator -->
+            <div id="giftTax-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Gift/Inheritance Tax</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'giftTax-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="giftTax-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate gift or inheritance tax liability.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Tax = Amount × Tax Rate (if applicable)</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Gift: ₹25,00,000, Tax Rate: 5%</p>
+                    <p><strong>Result:</strong> Tax: ₹1,25,000</p>
+                </div>
+                <div class="input-group">
+                    <label for="gtAmount-${id}">Gift/Inheritance Amount (₹)</label>
+                    <input type="number" id="gtAmount-${id}" placeholder="Amount" step="0.01" oninput="calcGiftTax(${id})" onkeypress="handleEnter(event)">
+                    <label for="gtRate-${id}">Tax Rate (%)</label>
+                    <input type="number" id="gtRate-${id}" placeholder="Tax Rate %" value="5" step="0.01" oninput="calcGiftTax(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Tax Amount: <span id="rTaxAmount-${id}">0</span></div>
+                    <div class="result">Net Received: <span id="rNetReceived-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Business Profit Calculator -->
+            <div id="businessProfit-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Business Profit Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'businessProfit-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="businessProfit-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate profit margin for your business.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Profit = Revenue - (COGS + Expenses), Margin = (Profit ÷ Revenue) × 100</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Revenue: ₹10,00,000, COGS: ₹4,00,000, Expenses: ₹2,00,000</p>
+                    <p><strong>Result:</strong> Profit: ₹4,00,000, Margin: 40%</p>
+                </div>
+                <div class="input-group">
+                    <label for="bpRevenue-${id}">Total Revenue (₹)</label>
+                    <input type="number" id="bpRevenue-${id}" placeholder="Revenue" step="0.01" oninput="calcBusinessProfit(${id})" onkeypress="handleEnter(event)">
+                    <label for="bpCOGS-${id}">Cost of Goods Sold (₹)</label>
+                    <input type="number" id="bpCOGS-${id}" placeholder="COGS" step="0.01" oninput="calcBusinessProfit(${id})" onkeypress="handleEnter(event)">
+                    <label for="bpExpenses-${id}">Operating Expenses (₹)</label>
+                    <input type="number" id="bpExpenses-${id}" placeholder="Expenses" step="0.01" oninput="calcBusinessProfit(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Profit: <span id="rProfit-${id}">0</span></div>
+                    <div class="result">Profit Margin: <span id="rMargin-${id}">0%</span></div>
+                </div>
+            </div>
+
+            <!-- Markup vs Margin Calculator -->
+            <div id="markupMargin-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Markup vs Margin Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'markupMargin-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="markupMargin-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Understand difference between markup and profit margin.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Markup = ((Selling - Cost) ÷ Cost) × 100, Margin = ((Selling - Cost) ÷ Selling) × 100</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Cost: ₹100, Selling: ₹150</p>
+                    <p><strong>Result:</strong> Markup: 50%, Margin: 33.33%</p>
+                </div>
+                <div class="input-group">
+                    <label for="mmCost-${id}">Cost Price (₹)</label>
+                    <input type="number" id="mmCost-${id}" placeholder="Cost Price" step="0.01" oninput="calcMarkupMargin(${id})" onkeypress="handleEnter(event)">
+                    <label for="mmSelling-${id}">Selling Price (₹)</label>
+                    <input type="number" id="mmSelling-${id}" placeholder="Selling Price" step="0.01" oninput="calcMarkupMargin(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Markup: <span id="rMarkup-${id}">0%</span></div>
+                    <div class="result">Profit Margin: <span id="rProfitMargin-${id}">0%</span></div>
+                </div>
+            </div>
+
+            <!-- Expense Inflation Calculator -->
+            <div id="expenseInflation-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Expense Inflation Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'expenseInflation-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="expenseInflation-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Project future expense needs based on inflation.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Future Expense = Current × (1 + Inflation Rate)^Years</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Current: ₹50,000, Inflation: 6%, Years: 10</p>
+                    <p><strong>Result:</strong> Future: ₹89,542</p>
+                </div>
+                <div class="input-group">
+                    <label for="eiCurrent-${id}">Current Expense (₹)</label>
+                    <input type="number" id="eiCurrent-${id}" placeholder="Current Expense" step="0.01" oninput="calcExpenseInflation(${id})" onkeypress="handleEnter(event)">
+                    <label for="eiRate-${id}">Annual Inflation Rate (%)</label>
+                    <input type="number" id="eiRate-${id}" placeholder="Inflation Rate %" value="6" step="0.01" oninput="calcExpenseInflation(${id})" onkeypress="handleEnter(event)">
+                    <label for="eiYears-${id}">Years</label>
+                    <input type="number" id="eiYears-${id}" placeholder="Years" value="10" step="0.5" oninput="calcExpenseInflation(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Future Expense: <span id="rFutureExpense-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Wedding Budget Calculator -->
+            <div id="weddingBudget-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Wedding Budget Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'weddingBudget-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="weddingBudget-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Plan and allocate wedding budget.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Total = Venue + Catering + Decorations + Other, Per-Guest = Catering ÷ Guests</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Venue: ₹5L, Catering: 300 guests @ ₹500, Decorations: ₹3L, Other: ₹1L</p>
+                    <p><strong>Result:</strong> Total: ₹15,00,000, Per-Guest: ₹500</p>
+                </div>
+                <div class="input-group">
+                    <label for="wbVenue-${id}">Venue Cost (₹)</label>
+                    <input type="number" id="wbVenue-${id}" placeholder="Venue" step="0.01" oninput="calcWeddingBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="wbGuests-${id}">Number of Guests</label>
+                    <input type="number" id="wbGuests-${id}" placeholder="Guests" step="1" oninput="calcWeddingBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="wbCateringPerGuest-${id}">Catering Cost Per Guest (₹)</label>
+                    <input type="number" id="wbCateringPerGuest-${id}" placeholder="Cost/Guest" value="500" step="0.01" oninput="calcWeddingBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="wbDecorations-${id}">Decorations (₹)</label>
+                    <input type="number" id="wbDecorations-${id}" placeholder="Decorations" step="0.01" oninput="calcWeddingBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="wbOther-${id}">Other Expenses (₹)</label>
+                    <input type="number" id="wbOther-${id}" placeholder="Other" step="0.01" oninput="calcWeddingBudget(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Catering: <span id="rTotalCatering-${id}">0</span></div>
+                    <div class="result">Total Budget: <span id="rWeddingTotal-${id}">0</span></div>
+                    <div class="result">Per Person Cost: <span id="rPerPersonCost-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Vacation Budget Calculator -->
+            <div id="vacationBudget-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Vacation Budget Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'vacationBudget-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="vacationBudget-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Plan vacation expenses by category.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Total = Flight + Hotel + Activities + Food + Other</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Flight: ₹20k, Hotel: ₹50k, Activities: ₹15k, Food: ₹10k, Other: ₹5k</p>
+                    <p><strong>Result:</strong> Total: ₹1,00,000</p>
+                </div>
+                <div class="input-group">
+                    <label for="vbFlight-${id}">Flight (₹)</label>
+                    <input type="number" id="vbFlight-${id}" placeholder="Flight" step="0.01" oninput="calcVacationBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="vbHotel-${id}">Hotel (₹)</label>
+                    <input type="number" id="vbHotel-${id}" placeholder="Hotel" step="0.01" oninput="calcVacationBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="vbActivities-${id}">Activities (₹)</label>
+                    <input type="number" id="vbActivities-${id}" placeholder="Activities" step="0.01" oninput="calcVacationBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="vbFood-${id}">Food & Dining (₹)</label>
+                    <input type="number" id="vbFood-${id}" placeholder="Food" step="0.01" oninput="calcVacationBudget(${id})" onkeypress="handleEnter(event)">
+                    <label for="vbOther-${id}">Other Expenses (₹)</label>
+                    <input type="number" id="vbOther-${id}" placeholder="Other" step="0.01" oninput="calcVacationBudget(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Vacation Cost: <span id="rVacationTotal-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Crypto ROI Calculator -->
+            <div id="cryptoROI-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Crypto ROI Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'cryptoROI-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="cryptoROI-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate return on cryptocurrency investment.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">ROI = ((Current Value - Initial) ÷ Initial) × 100</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Initial: ₹50,000, Current: ₹1,00,000</p>
+                    <p><strong>Result:</strong> ROI: 100%</p>
+                </div>
+                <div class="input-group">
+                    <label for="crInitial-${id}">Initial Investment (₹)</label>
+                    <input type="number" id="crInitial-${id}" placeholder="Initial Investment" step="0.01" oninput="calcCryptoROI(${id})" onkeypress="handleEnter(event)">
+                    <label for="crCurrent-${id}">Current Value (₹)</label>
+                    <input type="number" id="crCurrent-${id}" placeholder="Current Value" step="0.01" oninput="calcCryptoROI(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">ROI %: <span id="rROI-${id}">0%</span></div>
+                    <div class="result">Profit/Loss: <span id="rProfitLoss-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Crypto DCA Calculator -->
+            <div id="cryptoDCA-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Crypto Dollar Cost Averaging</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'cryptoDCA-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="cryptoDCA-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate DCA investment strategy outcomes.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Total Invested = Monthly Amount × Months, Average Price = Total ÷ Total Coins</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Monthly: ₹10,000, Months: 12, Avg Price: ₹50,000</p>
+                    <p><strong>Result:</strong> 2.4 coins, Cost: ₹1,20,000</p>
+                </div>
+                <div class="input-group">
+                    <label for="cdMonthly-${id}">Monthly Investment (₹)</label>
+                    <input type="number" id="cdMonthly-${id}" placeholder="Monthly Amount" step="0.01" oninput="calcCryptoDCA(${id})" onkeypress="handleEnter(event)">
+                    <label for="cdMonths-${id}">Number of Months</label>
+                    <input type="number" id="cdMonths-${id}" placeholder="Months" value="12" step="1" oninput="calcCryptoDCA(${id})" onkeypress="handleEnter(event)">
+                    <label for="cdAvgPrice-${id}">Average Crypto Price (₹)</label>
+                    <input type="number" id="cdAvgPrice-${id}" placeholder="Average Price" step="0.01" oninput="calcCryptoDCA(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Invested: <span id="rTotalInvested-${id}">0</span></div>
+                    <div class="result">Total Coins: <span id="rTotalCoins-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Bond Yield Calculator -->
+            <div id="bondYield-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Bond Yield Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'bondYield-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="bondYield-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate yield to maturity and annual coupon.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Coupon = Face Value × Coupon Rate, YTM ≈ (Coupon + (FV-Price)/Years) ÷ ((FV+Price)/2)</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Face: ₹1,000, Rate: 8%, Price: ₹950, Years: 5</p>
+                    <p><strong>Result:</strong> Coupon: ₹80, YTM: 8.76%</p>
+                </div>
+                <div class="input-group">
+                    <label for="byFaceValue-${id}">Face Value (₹)</label>
+                    <input type="number" id="byFaceValue-${id}" placeholder="Face Value" value="1000" step="0.01" oninput="calcBondYield(${id})" onkeypress="handleEnter(event)">
+                    <label for="byCouponRate-${id}">Coupon Rate (%)</label>
+                    <input type="number" id="byCouponRate-${id}" placeholder="Coupon Rate %" value="8" step="0.01" oninput="calcBondYield(${id})" onkeypress="handleEnter(event)">
+                    <label for="byPrice-${id}">Current Price (₹)</label>
+                    <input type="number" id="byPrice-${id}" placeholder="Current Price" value="950" step="0.01" oninput="calcBondYield(${id})" onkeypress="handleEnter(event)">
+                    <label for="byYearsToMaturity-${id}">Years to Maturity</label>
+                    <input type="number" id="byYearsToMaturity-${id}" placeholder="Years" value="5" step="0.5" oninput="calcBondYield(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Annual Coupon: <span id="rCoupon-${id}">0</span></div>
+                    <div class="result">Yield to Maturity: <span id="rYTM-${id}">0%</span></div>
+                </div>
+            </div>
+
+            <!-- NPV Calculator -->
+            <div id="npv-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Net Present Value (NPV)</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'npv-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="npv-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate NPV for investment decision making.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">NPV = -Initial + Σ(Cash Flow ÷ (1 + Discount Rate)^Year)</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Initial: ₹10L, Cash Flows: ₹3L per year for 5 years, Rate: 10%</p>
+                    <p><strong>Result:</strong> NPV: ₹13,75,733</p>
+                </div>
+                <div class="input-group">
+                    <label for="npvInitial-${id}">Initial Investment (₹)</label>
+                    <input type="number" id="npvInitial-${id}" placeholder="Investment" step="0.01" oninput="calcNPV(${id})" onkeypress="handleEnter(event)">
+                    <label for="npvAnnualCF-${id}">Annual Cash Flow (₹)</label>
+                    <input type="number" id="npvAnnualCF-${id}" placeholder="Annual Cash Flow" step="0.01" oninput="calcNPV(${id})" onkeypress="handleEnter(event)">
+                    <label for="npvYears-${id}">Number of Years</label>
+                    <input type="number" id="npvYears-${id}" placeholder="Years" value="5" step="1" oninput="calcNPV(${id})" onkeypress="handleEnter(event)">
+                    <label for="npvDiscount-${id}">Discount Rate (%)</label>
+                    <input type="number" id="npvDiscount-${id}" placeholder="Discount Rate %" value="10" step="0.01" oninput="calcNPV(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">NPV: <span id="rNPV-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- IRR Calculator -->
+            <div id="irr-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Internal Rate of Return (IRR)</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'irr-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="irr-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate IRR for investment analysis.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">IRR is the discount rate where NPV = 0 (Estimated using approximation)</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Initial: ₹10L, Annual CF: ₹3L for 5 years</p>
+                    <p><strong>Result:</strong> IRR: ~15.2%</p>
+                </div>
+                <div class="input-group">
+                    <label for="irrInitial-${id}">Initial Investment (₹)</label>
+                    <input type="number" id="irrInitial-${id}" placeholder="Investment" step="0.01" oninput="calcIRR(${id})" onkeypress="handleEnter(event)">
+                    <label for="irrAnnualCF-${id}">Annual Cash Flow (₹)</label>
+                    <input type="number" id="irrAnnualCF-${id}" placeholder="Annual Cash Flow" step="0.01" oninput="calcIRR(${id})" onkeypress="handleEnter(event)">
+                    <label for="irrYears-${id}">Number of Years</label>
+                    <input type="number" id="irrYears-${id}" placeholder="Years" value="5" step="1" oninput="calcIRR(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">IRR (Estimated): <span id="rIRR-${id}">0%</span></div>
+                </div>
+            </div>
+
+            <!-- Lease vs Buy Calculator -->
+            <div id="leaseVsBuy-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Lease vs Buy Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'leaseVsBuy-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="leaseVsBuy-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Compare leasing vs buying an asset.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Total Lease = Monthly Lease × Months, Total Buy = Price - Resale Value + Maintenance</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Lease: ₹30k/mo, Buy: ₹20L, Maintenance: ₹1.5L/yr, Resale: ₹15L</p>
+                    <p><strong>Result:</strong> Lease 5yr: ₹18L, Buy: ₹12.5L</p>
+                </div>
+                <div class="input-group">
+                    <label for="lvbLeaseMonthly-${id}">Monthly Lease Payment (₹)</label>
+                    <input type="number" id="lvbLeaseMonthly-${id}" placeholder="Lease Payment" step="0.01" oninput="calcLeaseVsBuy(${id})" onkeypress="handleEnter(event)">
+                    <label for="lvbMonths-${id}">Lease Duration (Months)</label>
+                    <input type="number" id="lvbMonths-${id}" placeholder="Months" value="60" step="1" oninput="calcLeaseVsBuy(${id})" onkeypress="handleEnter(event)">
+                    <label for="lvbBuyPrice-${id}">Purchase Price (₹)</label>
+                    <input type="number" id="lvbBuyPrice-${id}" placeholder="Purchase Price" step="0.01" oninput="calcLeaseVsBuy(${id})" onkeypress="handleEnter(event)">
+                    <label for="lvbMaintenance-${id}">Annual Maintenance (₹)</label>
+                    <input type="number" id="lvbMaintenance-${id}" placeholder="Annual Maintenance" step="0.01" oninput="calcLeaseVsBuy(${id})" onkeypress="handleEnter(event)">
+                    <label for="lvbResale-${id}">Resale Value (₹)</label>
+                    <input type="number" id="lvbResale-${id}" placeholder="Resale Value" step="0.01" oninput="calcLeaseVsBuy(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Total Lease Cost: <span id="rTotalLease-${id}">0</span></div>
+                    <div class="result">Total Buy Cost: <span id="rTotalBuy-${id}">0</span></div>
+                    <div class="result">Better Option: <span id="rBetterOption-${id}">-</span></div>
+                </div>
+            </div>
+
+            <!-- Cost of Living Calculator -->
+            <div id="costOfLiving-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Cost of Living Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'costOfLiving-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="costOfLiving-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate and compare cost of living across locations.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Total = Housing + Food + Transport + Utilities + Other</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Housing: ₹30k, Food: ₹10k, Transport: ₹3k, Utilities: ₹2k, Other: ₹5k</p>
+                    <p><strong>Result:</strong> Total: ₹50,000/month</p>
+                </div>
+                <div class="input-group">
+                    <label for="colHousing-${id}">Housing (₹)</label>
+                    <input type="number" id="colHousing-${id}" placeholder="Housing" step="0.01" oninput="calcCostOfLiving(${id})" onkeypress="handleEnter(event)">
+                    <label for="colFood-${id}">Food (₹)</label>
+                    <input type="number" id="colFood-${id}" placeholder="Food" step="0.01" oninput="calcCostOfLiving(${id})" onkeypress="handleEnter(event)">
+                    <label for="colTransport-${id}">Transport (₹)</label>
+                    <input type="number" id="colTransport-${id}" placeholder="Transport" step="0.01" oninput="calcCostOfLiving(${id})" onkeypress="handleEnter(event)">
+                    <label for="colUtilities-${id}">Utilities (₹)</label>
+                    <input type="number" id="colUtilities-${id}" placeholder="Utilities" step="0.01" oninput="calcCostOfLiving(${id})" onkeypress="handleEnter(event)">
+                    <label for="colOther-${id}">Other Expenses (₹)</label>
+                    <input type="number" id="colOther-${id}" placeholder="Other" step="0.01" oninput="calcCostOfLiving(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Monthly Cost: <span id="rMonthlyCost-${id}">0</span></div>
+                    <div class="result">Annual Cost: <span id="rAnnualCost-${id}">0</span></div>
+                </div>
+            </div>
+
+            <!-- Rental Yield Calculator -->
+            <div id="rentalYield-${id}" class="calculator-section" hidden>
+                <div class="section-header">
+                    <h3>Rental Yield Calculator</h3>
+                    <span class="tooltip-icon" onclick="toggleTooltip(event, 'rentalYield-tooltip-${id}')">ℹ️</span>
+                </div>
+                <div class="tooltip-box" id="rentalYield-tooltip-${id}">
+                    <button class="tooltip-close" onclick="closeTooltip(event)">×</button>
+                    <p class="tooltip-description">Calculate rental yield and investment metrics.</p>
+                    <h4>Formula</h4>
+                    <p class="formula">Gross Yield = (Annual Rent ÷ Property Price) × 100, Net Yield = (Annual Profit ÷ Property Price) × 100</p>
+                    <h4>Example</h4>
+                    <p><strong>Input:</strong> Property: ₹50L, Annual Rent: ₹4L, Maintenance: ₹50k</p>
+                    <p><strong>Result:</strong> Gross Yield: 8%, Net Yield: 7%</p>
+                </div>
+                <div class="input-group">
+                    <label for="ryPropertyPrice-${id}">Property Price (₹)</label>
+                    <input type="number" id="ryPropertyPrice-${id}" placeholder="Property Price" step="0.01" oninput="calcRentalYield(${id})" onkeypress="handleEnter(event)">
+                    <label for="ryMonthlyRent-${id}">Monthly Rent (₹)</label>
+                    <input type="number" id="ryMonthlyRent-${id}" placeholder="Monthly Rent" step="0.01" oninput="calcRentalYield(${id})" onkeypress="handleEnter(event)">
+                    <label for="ryMaintenanceAnnual-${id}">Annual Maintenance (₹)</label>
+                    <input type="number" id="ryMaintenanceAnnual-${id}" placeholder="Annual Maintenance" step="0.01" oninput="calcRentalYield(${id})" onkeypress="handleEnter(event)">
+                    <label for="ryPropertyTax-${id}">Annual Property Tax (₹)</label>
+                    <input type="number" id="ryPropertyTax-${id}" placeholder="Property Tax" step="0.01" oninput="calcRentalYield(${id})" onkeypress="handleEnter(event)">
+                </div>
+                <div class="result-group">
+                    <div class="result">Annual Rental Income: <span id="rAnnualRental-${id}">0</span></div>
+                    <div class="result">Annual Expenses: <span id="rAnnualExpenses-${id}">0</span></div>
+                    <div class="result">Gross Yield: <span id="rGrossYield-${id}">0%</span></div>
+                    <div class="result">Net Yield: <span id="rNetYield-${id}">0%</span></div>
+                </div>
+            </div>
+
             <button class="reset-calculator-btn" onclick="resetCalculator(${id})">Reset</button>
         </div>
     `;
@@ -2700,4 +3604,492 @@ function calcCollegeCost(id) {
     
     const futureCost = current * Math.pow(1 + inflation / 100, years);
     document.getElementById(`rCollegeFutureCost-${id}`).innerText = formatNumber(futureCost);
+}
+
+// Salary Calculator
+function calcSalary(id) {
+    const gross = parseFloat(document.getElementById(`scGross-${id}`).value) || 0;
+    const taxRate = parseFloat(document.getElementById(`scTaxRate-${id}`).value) || 0;
+    const deductions = parseFloat(document.getElementById(`scDeductions-${id}`).value) || 0;
+    
+    const tax = gross * (taxRate / 100);
+    const net = gross - tax - deductions;
+    
+    document.getElementById(`rNetSalary-${id}`).innerText = formatNumber(net);
+    document.getElementById(`rTaxAmount-${id}`).innerText = formatNumber(tax);
+}
+
+// Side Hustle Income Calculator
+function calcSideHustle(id) {
+    const rate = parseFloat(document.getElementById(`shiRate-${id}`).value) || 0;
+    const hours = parseFloat(document.getElementById(`shiHours-${id}`).value) || 0;
+    const expenses = parseFloat(document.getElementById(`shiExpenses-${id}`).value) || 0;
+    
+    const gross = rate * hours;
+    const net = gross - expenses;
+    
+    document.getElementById(`rGrossIncome-${id}`).innerText = formatNumber(gross);
+    document.getElementById(`rNetIncome-${id}`).innerText = formatNumber(net);
+}
+
+// Freelance Rate Calculator
+function calcFreelanceRate(id) {
+    const salary = parseFloat(document.getElementById(`frSalary-${id}`).value) || 0;
+    const markup = parseFloat(document.getElementById(`frMarkup-${id}`).value) || 0;
+    
+    if (salary === 0) {
+        document.getElementById(`rHourlyRate-${id}`).innerText = '0';
+        return;
+    }
+    
+    const baseRate = salary / 2000;
+    const rate = baseRate * (1 + markup / 100);
+    
+    document.getElementById(`rHourlyRate-${id}`).innerText = formatNumber(rate);
+}
+
+// Savings Rate Calculator
+function calcSavingsRate(id) {
+    const income = parseFloat(document.getElementById(`srIncome-${id}`).value) || 0;
+    const savings = parseFloat(document.getElementById(`srSavings-${id}`).value) || 0;
+    
+    if (income === 0) {
+        document.getElementById(`rSavingsRate-${id}`).innerText = '0%';
+        document.getElementById(`rMonthlySpending-${id}`).innerText = '0';
+        return;
+    }
+    
+    const rate = (savings / income) * 100;
+    const spending = income - savings;
+    
+    document.getElementById(`rSavingsRate-${id}`).innerText = (rate.toFixed(2)) + '%';
+    document.getElementById(`rMonthlySpending-${id}`).innerText = formatNumber(spending);
+}
+
+// Goal Tracker Calculator
+function calcGoalTracker(id) {
+    const target = parseFloat(document.getElementById(`gtTarget-${id}`).value) || 0;
+    const current = parseFloat(document.getElementById(`gtCurrent-${id}`).value) || 0;
+    
+    if (target === 0) {
+        document.getElementById(`rProgress-${id}`).innerText = '0%';
+        document.getElementById(`rRemaining-${id}`).innerText = '0';
+        return;
+    }
+    
+    const progress = (current / target) * 100;
+    const remaining = target - current;
+    
+    document.getElementById(`rProgress-${id}`).innerText = (progress.toFixed(2)) + '%';
+    document.getElementById(`rRemaining-${id}`).innerText = formatNumber(remaining);
+}
+
+// Expense Tracker Calculator
+function calcExpenseTracker(id) {
+    const food = parseFloat(document.getElementById(`etFood-${id}`).value) || 0;
+    const transport = parseFloat(document.getElementById(`etTransport-${id}`).value) || 0;
+    const entertainment = parseFloat(document.getElementById(`etEntertainment-${id}`).value) || 0;
+    const other = parseFloat(document.getElementById(`etOther-${id}`).value) || 0;
+    const income = parseFloat(document.getElementById(`etIncome-${id}`).value) || 0;
+    
+    const total = food + transport + entertainment + other;
+    let ratio = 0;
+    
+    if (income > 0) {
+        ratio = (total / income) * 100;
+    }
+    
+    document.getElementById(`rTotalExpenses-${id}`).innerText = formatNumber(total);
+    document.getElementById(`rExpenseRatio-${id}`).innerText = (ratio.toFixed(2)) + '%';
+}
+
+// Loan Comparison Calculator
+function calcLoanComparison(id) {
+    const principal1 = parseFloat(document.getElementById(`lcLoan1Principal-${id}`).value) || 0;
+    const rate1 = parseFloat(document.getElementById(`lcLoan1Rate-${id}`).value) || 0;
+    const tenure1 = parseFloat(document.getElementById(`lcLoan1Tenure-${id}`).value) || 0;
+    const principal2 = parseFloat(document.getElementById(`lcLoan2Principal-${id}`).value) || 0;
+    const rate2 = parseFloat(document.getElementById(`lcLoan2Rate-${id}`).value) || 0;
+    const tenure2 = parseFloat(document.getElementById(`lcLoan2Tenure-${id}`).value) || 0;
+    
+    const calcEMI = (p, r, t) => {
+        if (r === 0) return p / (t * 12);
+        const monthlyRate = r / 100 / 12;
+        const months = t * 12;
+        return (p * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+    };
+    
+    const emi1 = calcEMI(principal1, rate1, tenure1);
+    const interest1 = (emi1 * tenure1 * 12) - principal1;
+    const emi2 = calcEMI(principal2, rate2, tenure2);
+    const interest2 = (emi2 * tenure2 * 12) - principal2;
+    
+    document.getElementById(`rLoan1EMI-${id}`).innerText = formatNumber(emi1);
+    document.getElementById(`rLoan1Interest-${id}`).innerText = formatNumber(interest1);
+    document.getElementById(`rLoan2EMI-${id}`).innerText = formatNumber(emi2);
+    document.getElementById(`rLoan2Interest-${id}`).innerText = formatNumber(interest2);
+}
+
+// Payback Period Calculator
+function calcPaybackPeriod(id) {
+    const investment = parseFloat(document.getElementById(`ppInvestment-${id}`).value) || 0;
+    const cashFlow = parseFloat(document.getElementById(`ppAnnualCash-${id}`).value) || 0;
+    
+    if (cashFlow === 0) {
+        document.getElementById(`rPaybackYears-${id}`).innerText = '∞';
+        return;
+    }
+    
+    const payback = investment / cashFlow;
+    document.getElementById(`rPaybackYears-${id}`).innerText = (payback.toFixed(2));
+}
+
+// Early Loan Payoff Calculator
+function calcEarlyPayoff(id) {
+    const principal = parseFloat(document.getElementById(`epPrincipal-${id}`).value) || 0;
+    const rate = parseFloat(document.getElementById(`epRate-${id}`).value) || 0;
+    const tenure = parseFloat(document.getElementById(`epTenure-${id}`).value) || 0;
+    const extraPayment = parseFloat(document.getElementById(`epExtraPayment-${id}`).value) || 0;
+    
+    const monthlyRate = rate / 100 / 12;
+    const months = tenure * 12;
+    const emi = (principal * monthlyRate * Math.pow(1 + monthlyRate, months)) / (Math.pow(1 + monthlyRate, months) - 1);
+    const totalEMI = emi + extraPayment;
+    
+    let balance = principal;
+    let newMonths = 0;
+    
+    while (balance > 0 && newMonths < 600) {
+        const interest = balance * monthlyRate;
+        const principal_payment = totalEMI - interest;
+        balance -= principal_payment;
+        newMonths++;
+    }
+    
+    const newTenure = newMonths / 12;
+    const regularTotalInterest = (emi * months) - principal;
+    const newTotalInterest = (emi * newMonths) + (extraPayment * newMonths) - principal;
+    const saved = regularTotalInterest - newTotalInterest;
+    
+    document.getElementById(`rRegularEMI-${id}`).innerText = formatNumber(emi);
+    document.getElementById(`rNewPayoff-${id}`).innerText = (newTenure.toFixed(2));
+    document.getElementById(`rSavedInterest-${id}`).innerText = formatNumber(Math.max(saved, 0));
+}
+
+// P/E Ratio Calculator
+function calcPERatio(id) {
+    const price = parseFloat(document.getElementById(`perPrice-${id}`).value) || 0;
+    const eps = parseFloat(document.getElementById(`perEPS-${id}`).value) || 0;
+    
+    if (eps === 0) {
+        document.getElementById(`rPERatio-${id}`).innerText = '∞';
+        return;
+    }
+    
+    const ratio = price / eps;
+    document.getElementById(`rPERatio-${id}`).innerText = (ratio.toFixed(2));
+}
+
+// Dividend Growth Calculator
+function calcDividendGrowth(id) {
+    const current = parseFloat(document.getElementById(`dgCurrent-${id}`).value) || 0;
+    const rate = parseFloat(document.getElementById(`dgGrowthRate-${id}`).value) || 0;
+    const years = parseFloat(document.getElementById(`dgYears-${id}`).value) || 0;
+    
+    const future = current * Math.pow(1 + rate / 100, years);
+    document.getElementById(`rFutureDividend-${id}`).innerText = formatNumber(future);
+}
+
+// Portfolio Rebalancing Calculator
+function calcPortfolioRebalancing(id) {
+    const stocks = parseFloat(document.getElementById(`prStockValue-${id}`).value) || 0;
+    const bonds = parseFloat(document.getElementById(`prBondValue-${id}`).value) || 0;
+    const targetStock = parseFloat(document.getElementById(`prTargetStock-${id}`).value) || 0;
+    
+    const total = stocks + bonds;
+    if (total === 0) {
+        document.getElementById(`rTotalPortfolio-${id}`).innerText = '0';
+        document.getElementById(`rStocksAdjustment-${id}`).innerText = '0';
+        document.getElementById(`rBondsAdjustment-${id}`).innerText = '0';
+        return;
+    }
+    
+    const targetStockValue = total * (targetStock / 100);
+    const targetBondValue = total * (1 - targetStock / 100);
+    const stocksAdj = targetStockValue - stocks;
+    const bondsAdj = targetBondValue - bonds;
+    
+    document.getElementById(`rTotalPortfolio-${id}`).innerText = formatNumber(total);
+    document.getElementById(`rStocksAdjustment-${id}`).innerText = formatNumber(stocksAdj);
+    document.getElementById(`rBondsAdjustment-${id}`).innerText = formatNumber(bondsAdj);
+}
+
+// Tax Loss Harvesting Calculator
+function calcTaxLossHarvesting(id) {
+    const loss = parseFloat(document.getElementById(`tlhLoss-${id}`).value) || 0;
+    const taxRate = parseFloat(document.getElementById(`tlhTaxRate-${id}`).value) || 0;
+    
+    const saved = loss * (taxRate / 100);
+    document.getElementById(`rTaxSaved-${id}`).innerText = formatNumber(saved);
+}
+
+// Tax Bracket Calculator
+function calcTaxBracket(id) {
+    const income = parseFloat(document.getElementById(`tbIncome-${id}`).value) || 0;
+    
+    // Indian tax brackets (2024)
+    let tax = 0;
+    if (income > 1500000) tax += (income - 1500000) * 0.30;
+    else if (income > 1000000) tax += (income - 1000000) * 0.20;
+    else if (income > 500000) tax += (income - 500000) * 0.10;
+    else if (income > 250000) tax += (income - 250000) * 0.05;
+    
+    const effectiveRate = income > 0 ? (tax / income) * 100 : 0;
+    
+    document.getElementById(`rTotalTax-${id}`).innerText = formatNumber(tax);
+    document.getElementById(`rEffectiveRate-${id}`).innerText = (effectiveRate.toFixed(2)) + '%';
+}
+
+// Gift/Inheritance Tax Calculator
+function calcGiftTax(id) {
+    const amount = parseFloat(document.getElementById(`gtAmount-${id}`).value) || 0;
+    const rate = parseFloat(document.getElementById(`gtRate-${id}`).value) || 0;
+    
+    const tax = amount * (rate / 100);
+    const net = amount - tax;
+    
+    document.getElementById(`rTaxAmount-${id}`).innerText = formatNumber(tax);
+    document.getElementById(`rNetReceived-${id}`).innerText = formatNumber(net);
+}
+
+// Business Profit Calculator
+function calcBusinessProfit(id) {
+    const revenue = parseFloat(document.getElementById(`bpRevenue-${id}`).value) || 0;
+    const cogs = parseFloat(document.getElementById(`bpCOGS-${id}`).value) || 0;
+    const expenses = parseFloat(document.getElementById(`bpExpenses-${id}`).value) || 0;
+    
+    const profit = revenue - cogs - expenses;
+    let margin = 0;
+    if (revenue > 0) {
+        margin = (profit / revenue) * 100;
+    }
+    
+    document.getElementById(`rProfit-${id}`).innerText = formatNumber(profit);
+    document.getElementById(`rMargin-${id}`).innerText = (margin.toFixed(2)) + '%';
+}
+
+// Markup vs Margin Calculator
+function calcMarkupMargin(id) {
+    const cost = parseFloat(document.getElementById(`mmCost-${id}`).value) || 0;
+    const selling = parseFloat(document.getElementById(`mmSelling-${id}`).value) || 0;
+    
+    let markup = 0, margin = 0;
+    if (cost > 0) {
+        markup = ((selling - cost) / cost) * 100;
+    }
+    if (selling > 0) {
+        margin = ((selling - cost) / selling) * 100;
+    }
+    
+    document.getElementById(`rMarkup-${id}`).innerText = (markup.toFixed(2)) + '%';
+    document.getElementById(`rProfitMargin-${id}`).innerText = (margin.toFixed(2)) + '%';
+}
+
+// Expense Inflation Calculator
+function calcExpenseInflation(id) {
+    const current = parseFloat(document.getElementById(`eiCurrent-${id}`).value) || 0;
+    const rate = parseFloat(document.getElementById(`eiRate-${id}`).value) || 0;
+    const years = parseFloat(document.getElementById(`eiYears-${id}`).value) || 0;
+    
+    const future = current * Math.pow(1 + rate / 100, years);
+    document.getElementById(`rFutureExpense-${id}`).innerText = formatNumber(future);
+}
+
+// Wedding Budget Calculator
+function calcWeddingBudget(id) {
+    const venue = parseFloat(document.getElementById(`wbVenue-${id}`).value) || 0;
+    const guests = parseFloat(document.getElementById(`wbGuests-${id}`).value) || 0;
+    const cateringPerGuest = parseFloat(document.getElementById(`wbCateringPerGuest-${id}`).value) || 0;
+    const decorations = parseFloat(document.getElementById(`wbDecorations-${id}`).value) || 0;
+    const other = parseFloat(document.getElementById(`wbOther-${id}`).value) || 0;
+    
+    const catering = guests * cateringPerGuest;
+    const total = venue + catering + decorations + other;
+    const perPerson = guests > 0 ? (catering / guests) : 0;
+    
+    document.getElementById(`rTotalCatering-${id}`).innerText = formatNumber(catering);
+    document.getElementById(`rWeddingTotal-${id}`).innerText = formatNumber(total);
+    document.getElementById(`rPerPersonCost-${id}`).innerText = formatNumber(perPerson);
+}
+
+// Vacation Budget Calculator
+function calcVacationBudget(id) {
+    const flight = parseFloat(document.getElementById(`vbFlight-${id}`).value) || 0;
+    const hotel = parseFloat(document.getElementById(`vbHotel-${id}`).value) || 0;
+    const activities = parseFloat(document.getElementById(`vbActivities-${id}`).value) || 0;
+    const food = parseFloat(document.getElementById(`vbFood-${id}`).value) || 0;
+    const other = parseFloat(document.getElementById(`vbOther-${id}`).value) || 0;
+    
+    const total = flight + hotel + activities + food + other;
+    document.getElementById(`rVacationTotal-${id}`).innerText = formatNumber(total);
+}
+
+// Crypto ROI Calculator
+function calcCryptoROI(id) {
+    const initial = parseFloat(document.getElementById(`crInitial-${id}`).value) || 0;
+    const current = parseFloat(document.getElementById(`crCurrent-${id}`).value) || 0;
+    
+    let roi = 0;
+    if (initial > 0) {
+        roi = ((current - initial) / initial) * 100;
+    }
+    const profitLoss = current - initial;
+    
+    document.getElementById(`rROI-${id}`).innerText = (roi.toFixed(2)) + '%';
+    document.getElementById(`rProfitLoss-${id}`).innerText = formatNumber(profitLoss);
+}
+
+// Crypto DCA Calculator
+function calcCryptoDCA(id) {
+    const monthly = parseFloat(document.getElementById(`cdMonthly-${id}`).value) || 0;
+    const months = parseFloat(document.getElementById(`cdMonths-${id}`).value) || 0;
+    const avgPrice = parseFloat(document.getElementById(`cdAvgPrice-${id}`).value) || 0;
+    
+    const totalInvested = monthly * months;
+    let totalCoins = 0;
+    if (avgPrice > 0) {
+        totalCoins = totalInvested / avgPrice;
+    }
+    
+    document.getElementById(`rTotalInvested-${id}`).innerText = formatNumber(totalInvested);
+    document.getElementById(`rTotalCoins-${id}`).innerText = (totalCoins.toFixed(8));
+}
+
+// Bond Yield Calculator
+function calcBondYield(id) {
+    const faceValue = parseFloat(document.getElementById(`byFaceValue-${id}`).value) || 1000;
+    const couponRate = parseFloat(document.getElementById(`byCouponRate-${id}`).value) || 0;
+    const price = parseFloat(document.getElementById(`byPrice-${id}`).value) || 1000;
+    const years = parseFloat(document.getElementById(`byYearsToMaturity-${id}`).value) || 0;
+    
+    const coupon = faceValue * (couponRate / 100);
+    let ytm = 0;
+    if (years > 0) {
+        ytm = ((coupon + (faceValue - price) / years) / ((faceValue + price) / 2)) * 100;
+    }
+    
+    document.getElementById(`rCoupon-${id}`).innerText = formatNumber(coupon);
+    document.getElementById(`rYTM-${id}`).innerText = (ytm.toFixed(2)) + '%';
+}
+
+// NPV Calculator
+function calcNPV(id) {
+    const initial = parseFloat(document.getElementById(`npvInitial-${id}`).value) || 0;
+    const cashFlow = parseFloat(document.getElementById(`npvAnnualCF-${id}`).value) || 0;
+    const years = parseFloat(document.getElementById(`npvYears-${id}`).value) || 0;
+    const discountRate = parseFloat(document.getElementById(`npvDiscount-${id}`).value) || 0;
+    
+    let npv = -initial;
+    const rate = discountRate / 100;
+    
+    for (let year = 1; year <= years; year++) {
+        npv += cashFlow / Math.pow(1 + rate, year);
+    }
+    
+    document.getElementById(`rNPV-${id}`).innerText = formatNumber(npv);
+}
+
+// IRR Calculator
+function calcIRR(id) {
+    const initial = parseFloat(document.getElementById(`irrInitial-${id}`).value) || 0;
+    const cashFlow = parseFloat(document.getElementById(`irrAnnualCF-${id}`).value) || 0;
+    const years = parseFloat(document.getElementById(`irrYears-${id}`).value) || 0;
+    
+    if (initial === 0 || cashFlow === 0) {
+        document.getElementById(`rIRR-${id}`).innerText = '0%';
+        return;
+    }
+    
+    // Estimate IRR using Newton-Raphson method
+    let irr = cashFlow / initial;
+    
+    for (let i = 0; i < 100; i++) {
+        let npv = -initial;
+        let npvDerivative = 0;
+        
+        for (let year = 1; year <= years; year++) {
+            npv += cashFlow / Math.pow(1 + irr, year);
+            npvDerivative -= (year * cashFlow) / Math.pow(1 + irr, year + 1);
+        }
+        
+        if (Math.abs(npv) < 0.01) break;
+        irr = irr - (npv / npvDerivative);
+    }
+    
+    document.getElementById(`rIRR-${id}`).innerText = ((irr * 100).toFixed(2)) + '%';
+}
+
+// Lease vs Buy Calculator
+function calcLeaseVsBuy(id) {
+    const leaseMonthly = parseFloat(document.getElementById(`lvbLeaseMonthly-${id}`).value) || 0;
+    const months = parseFloat(document.getElementById(`lvbMonths-${id}`).value) || 0;
+    const buyPrice = parseFloat(document.getElementById(`lvbBuyPrice-${id}`).value) || 0;
+    const maintenance = parseFloat(document.getElementById(`lvbMaintenance-${id}`).value) || 0;
+    const resale = parseFloat(document.getElementById(`lvbResale-${id}`).value) || 0;
+    
+    const totalLease = leaseMonthly * months;
+    const years = months / 12;
+    const totalMaintenance = maintenance * years;
+    const totalBuy = buyPrice + totalMaintenance - resale;
+    
+    let better = '-';
+    if (totalLease < totalBuy) {
+        better = 'Lease';
+    } else if (totalBuy < totalLease) {
+        better = 'Buy';
+    } else {
+        better = 'Same';
+    }
+    
+    document.getElementById(`rTotalLease-${id}`).innerText = formatNumber(totalLease);
+    document.getElementById(`rTotalBuy-${id}`).innerText = formatNumber(totalBuy);
+    document.getElementById(`rBetterOption-${id}`).innerText = better;
+}
+
+// Cost of Living Calculator
+function calcCostOfLiving(id) {
+    const housing = parseFloat(document.getElementById(`colHousing-${id}`).value) || 0;
+    const food = parseFloat(document.getElementById(`colFood-${id}`).value) || 0;
+    const transport = parseFloat(document.getElementById(`colTransport-${id}`).value) || 0;
+    const utilities = parseFloat(document.getElementById(`colUtilities-${id}`).value) || 0;
+    const other = parseFloat(document.getElementById(`colOther-${id}`).value) || 0;
+    
+    const monthly = housing + food + transport + utilities + other;
+    const annual = monthly * 12;
+    
+    document.getElementById(`rMonthlyCost-${id}`).innerText = formatNumber(monthly);
+    document.getElementById(`rAnnualCost-${id}`).innerText = formatNumber(annual);
+}
+
+// Rental Yield Calculator
+function calcRentalYield(id) {
+    const propertyPrice = parseFloat(document.getElementById(`ryPropertyPrice-${id}`).value) || 0;
+    const monthlyRent = parseFloat(document.getElementById(`ryMonthlyRent-${id}`).value) || 0;
+    const maintenance = parseFloat(document.getElementById(`ryMaintenanceAnnual-${id}`).value) || 0;
+    const tax = parseFloat(document.getElementById(`ryPropertyTax-${id}`).value) || 0;
+    
+    const annualRent = monthlyRent * 12;
+    const expenses = maintenance + tax;
+    const profit = annualRent - expenses;
+    
+    let grossYield = 0, netYield = 0;
+    if (propertyPrice > 0) {
+        grossYield = (annualRent / propertyPrice) * 100;
+        netYield = (profit / propertyPrice) * 100;
+    }
+    
+    document.getElementById(`rAnnualRental-${id}`).innerText = formatNumber(annualRent);
+    document.getElementById(`rAnnualExpenses-${id}`).innerText = formatNumber(expenses);
+    document.getElementById(`rGrossYield-${id}`).innerText = (grossYield.toFixed(2)) + '%';
+    document.getElementById(`rNetYield-${id}`).innerText = (netYield.toFixed(2)) + '%';
 }
